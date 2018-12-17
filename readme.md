@@ -16,3 +16,7 @@ http://localhost:8080/
 {"status":1,"ecode":0,"emessage":null,"data":"this is deploy home"}
 ```
 
+4、打包
+```
+mvn clean package docker:build
+```
