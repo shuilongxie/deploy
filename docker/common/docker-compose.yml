@@ -1,0 +1,10 @@
+version: '2'
+services:
+  eurekaserver:
+   image:   liaolangsheng/deploy:0.1
+   ports:
+       - "80:8080"
+   environment:
+      EUREKASERVER_URI: "http://eurekaserver:8761/eureka/"
+      EUREKASERVER_PORT: 8761
+      ENCRYPT_KEY:       "IMSYMMETRIC"
