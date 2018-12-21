@@ -1,3 +1,4 @@
+### 一、项目基本操作
 1、在项目根目录，运行以下命令启动
 
 ```
@@ -19,4 +20,9 @@ http://localhost:8080/
 4、打包
 ```
 mvn clean package docker:build
+```
+
+### 二、.travis.yml
+```
+travis encrypt DOCKER_USERNAME=somerandomname --add env.globa
 ```
